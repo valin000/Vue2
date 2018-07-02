@@ -8,7 +8,7 @@
 <script>
 export default {
   computed: {
-    $style() {
+    $style () {
       return {
         mainHeader: ''
       }

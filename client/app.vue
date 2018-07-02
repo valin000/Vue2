@@ -14,7 +14,7 @@ import Todo from './views/todo/todo.vue'
 
 export default {
   components: {
-    Header,Footer,Todo
+    Header, Footer, Todo
   }
 }
 </script>
