@@ -1,6 +1,6 @@
 const path = require('path')
 const HTMLPlugin = require('html-webpack-plugin')
-const webpack  = require('webpack')
+const webpack = require('webpack')
 const ExtractPlugin = require('extract-text-webpack-plugin')
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -53,7 +53,7 @@ const config = {
   ]
 }
 
-if(isDev) {
+if (isDev) {
   config.module.rules.push(
     {
       test: /\.styl/,
@@ -78,7 +78,7 @@ if(isDev) {
       errors: true
     },
     hot: true
-  },
+  }
   config.plugins.push(
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin()
