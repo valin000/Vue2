@@ -10,9 +10,7 @@ const defaultPlugins = [
       NODE_ENV: '"development"'
     }
   }),
-  new HTMLPlugin({
-    template: path.join(__dirname, 'template.html')
-  })
+  new HTMLPlugin()
 ]
 
 const devServer = {

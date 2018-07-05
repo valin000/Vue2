@@ -27,7 +27,7 @@ const devServer = {
 
 let config
 
-if(isDev) {
+if (isDev) {
   config = merge(baseConfig, {
     devtool: '#cheap-module-eval-source-map',
     module: {
@@ -60,7 +60,7 @@ if(isDev) {
       new webpack.NoEmitOnErrorsPlugin()
     ])
   })
-} else {  
+} else {
   config = merge(baseConfig, {
     entry: {
       app: path.join(__dirname, '../client/index.js'),
